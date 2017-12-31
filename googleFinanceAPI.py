@@ -18,7 +18,7 @@ data= dr.DataReader("BAC",'yahoo',start,end)
 
 """DataReader('TSLA','yahoo',start, end)"""
 
-print(data.head())
+print(data.head(2))
 
 data['pr_chg'] = data['Close'].shift(1)-data['Close'].shift(6)
 
